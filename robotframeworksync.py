@@ -6,7 +6,7 @@ import threading
 
 from MeteorClient import MeteorClient
 
-
+###### use exec test command pybot testname etc --robotframeworkSync or -robotframeworkSync
 __all__ = ['robotframeworkSync']
 
 FINISH = 1
