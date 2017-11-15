@@ -1,5 +1,5 @@
 # RobotframeworkSyncTime
-DashBoard avec log en temps réel de l'éxécution des tests sous robotframework
+DashBoard avec log en temps réel de l'exécution des tests sous RobotFramework
 
 # Todo
 - Surmontage de la library python RobotFramework
