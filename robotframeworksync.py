@@ -1,3 +1,5 @@
+###### Init script ######
+
 import Queue
 import time
 import threading
@@ -23,30 +25,31 @@ class _MeteorSend(object):
         self.client.connect()
 
         self.configs = {
-            // RobotFramework start key run
+            # Format json pour bdd
+            # RobotFramework start key run
             'start_run': {
                 'method': 'startRun',
                 'callback': self.handle_run_call
             },
 
-            // RobotFramework start suite key
+            # RobotFramework start suite key
             'start_suite': {'method': 'startSuite'},
             'end_suite': {'method': 'endSuite'},
 
-            // RobotFramework start test key
+            # RobotFramework start test key
             'start_test': {'method': 'startTest'},
             'end_test': {'method': 'endTest'},
 
-            // RobotFramework start keyword
+            # RobotFramework start keyword
             'start_keyword': {'method': 'startKeyword'},
             'end_keyword': {'method': 'endKeyword'},
 
-            // RobotFramework log / output message
+            # RobotFramework log / output message
             'log_message': {'method': 'logMessage'}
         }
 
     def connected_event(self):
-        // Evenement push
+        # Evenement push
         self.connected = True
         self.thread = threading.Thread(target=self.work)
         self.thread.start()
