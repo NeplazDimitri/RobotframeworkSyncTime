@@ -18,9 +18,9 @@ class _MeteorSend(object):
         self.run = None
         self.queue = queue
         self.thread = threading.Thread(target=self.work)
-        // API server client
+        # API server client
         self.client = MeteorClient('ws://127.0.0.1:3000/websocket')
-        // Connection client websocket work
+        # Connection client websocket work
         self.client.on('connected', self.connected_event)
         self.client.connect()
 
