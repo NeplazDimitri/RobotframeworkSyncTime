@@ -7,4 +7,4 @@ DashBoard avec log en temps réel de l'exécution des tests sous RobotFramework
 - Push en temps réel des données dans une bdd NoSQL (MongoDB)
 - Mise en place du websocket et du frontend client (Angular4)
 - Enregistrement des tests finaux
-- Générateur automatique des statistiques et comptes rendus
+- Générateur automatique, statistiques et comptes rendus
