@@ -1,4 +1,5 @@
 ###### Init script ######
+###### Source: http://robot-framework.readthedocs.io/en/3.0.2/_modules/robot/output/listeners.html
 
 import Queue
 import time
